@@ -1,6 +1,6 @@
-# Tales from 2080: Soul of a Weapon
+# Tales from the Reclamation: Ghost in the Machine
 
-## Welcome to 2080
+## Welcome to the Reclamation
 
 > "In the 2020s, chrome enhanced our bodily capabilities and made up for our handicaps. In the Time
 > Of The Red, Chrome extended our capabilities into the superhuman. And in 2077, V showed us that

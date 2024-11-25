@@ -19,6 +19,8 @@ of four alphabets and the floor number [^3].
 | The Farms                           | Kikune Ikeda         | Lv.1000 to Lv.1027 | This is where 90% of Terram's food is produced. Entry into these floors is forbidden, workers remain tight-lipped and well-protected, trespassing means death. Ikeda, the *Primero Guardia* will not hesitate to declare *cessatio* [^6] until trespassers killed.                                                                                                                   |
 | Church of The Most Holy Virgin Mary | Father Ryker Strauss | CAIT793            | A single Gothic building with a high arching ceiling, and a massive bell tower. Father Ryker is also one of the best ripperdocs for at least 20 levels. Getting a personal appointment from him requires that you win his admiration. You may get free repairs for health critical cyberware and civilian installs here as the church and clinic are funded by the *Novena Guardia*. |
 
+<!-- TODO: Update image, the addressing is wrong -->
+
 [^2]: When doing [the math](https://math.stackexchange.com/a/3007768) for radius 18km, squire edge
     250m, you end up needing 4 alphabets to uniquely identify each block (3911 squires within 18km
     radius, 12^4 = 20736).
@@ -31,8 +33,6 @@ of four alphabets and the floor number [^3].
 
 [^4]: Not all floors are 10m thick. Sometimes, multiple floors are merged into one large open space
     usually for massive industrial works.
-
-<!-- TODO: Update image, the addressing is wrong -->
 
 [^3]: A schematic to help understand Terram's addressing system.
 
