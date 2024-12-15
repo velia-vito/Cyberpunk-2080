@@ -1,0 +1,86 @@
+/*
+HOOK            invtriangle         Potential Start to the mission
+DEVELOPMENT     circle              New information/event that influences the players approach
+ACTION          box3d                 Players doing something
+CLIMAX          triangle            Potential end to the mission
+*/
+
+digraph satoshi {
+    // =================
+    // ===== ATTRS =====
+    // =================
+
+    graph [
+        linelength = 50
+        splines = line
+        dpi = 300
+    ];
+
+    edge [
+        minlen = 3
+    ];
+
+
+    // =================
+    // ===== NODES =====
+    // =================
+
+    // ?
+    Dev1Hands [
+        label = "Mr. Hands offers crew info\nin exchange for a job."
+        xlabel = "Crew sucessfully sneaks into Dogtown."
+        shape = "component"
+    ];
+
+    // ?
+    Dev1BlackSapphire [
+        label = "Crew seek to enter the Black Sapphire."
+        xlabel = "Crew has an altercation\nwhile entering Dogtown."
+        shape = "component"
+    ];
+
+    // Satoshi's Grubb-Inhara Algorithm if true, is potentially more devastating than an ICBM and an
+    // ICBM costs about €$370M to develop. €$180M is a pretty reasonable asking price.
+    Dev2Purchase [
+        label = "Crew can buy information\nregarding Satoshi for €$180M"
+        shape = "note"
+    ];
+
+    Act1Theft [
+        label = "Crew is tasked by Mr. Hands to\nbreak into a secure off-the-grid\nnetwork and steal data."
+        xlabel = "Data being stolen is the same\ndata the Crew wants to buy."
+        shape = "box3d"
+    ];
+
+    Dev3DataCheck [
+        label = "Crew realizes that data they're stealing\nis the same data they're trying to buy."
+        shape = "component"
+    ];
+
+    Dev4FiveMil [
+        label = "Varshitha asks for an\nupdate and pays the\nremaining €$5M required for\nthe purchase."
+        shape = "note"
+    ];
+
+    Act2Survive [
+        label = "Informant is pissed that the crew has\nthe balls to show up with money after\nstealing the data. Crew must now\nsurvive and escape Dogtown."
+        shape = "box3d"
+    ];
+
+    Dev5DressDown [
+        label = "Millitech is pissed about the stunt\nthe Crew pulled in Dogtown. The crew\ngets a pointed 'Termination of life'\nwarning if they repeat this shit."
+        shape = "component"
+    ];
+
+    // =================
+    // ===== GRAPH =====
+    // =================
+
+    Dev1BlackSapphire   -> Dev2Purchase
+    Dev2Purchase        -> Act1Theft        [xlabel = "Mr. Hands offers\n€$179M for the data."]
+    Dev1Hands           -> Act1Theft
+    Act1Theft           -> Dev4FiveMil
+    Act1Theft           -> Dev3DataCheck    [xlabel = "Crew checks the data."]
+    Dev4FiveMil         -> Act2Survive
+    Act2Survive         -> Dev5DressDown
+}
